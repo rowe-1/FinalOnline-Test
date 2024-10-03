@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+</head>
+<body>
+    <h1>Employee Management</h1>
+    <a href="/employee_count">Get Employee Count</a><br>
+    <a href="/all_docs">Get All Employee Documents</a><br>
+    <form action="/delete_employee" method="POST">
+        <input type="text" name="emp_id" placeholder="Employee ID to delete" required>
+        <button type="submit">Delete Employee</button>
+    </form>
+    <form action="/search" method="POST">
+        <input type="text" name="column_name" placeholder="Column Name" required>
+        <input type="text" name="value" placeholder="Value" required>
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>
